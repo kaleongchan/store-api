@@ -5,6 +5,7 @@ Store branches can have any number of other store branches (children).
 # Choosing the data structure
 
 On first glane, a tree data structure can be implemented relaltively easily with table structure like this:
+
 | id | name    | parent_id |
 |----|---------|-----------|
 | 1  | Store 1 | null      |
@@ -17,6 +18,7 @@ This is what is called **Adjacency List Model**. Each node references its immedi
 
 
 A bit googling came back with an alternative solution for the task -**Nested Set Model**
+
 | id | name    | left | right |
 |----|---------|-----|-----|
 | 1  | Store 1 | 1   | 10  |
@@ -31,5 +33,5 @@ Being more suitable for the requirement, and also as a challenge to myself, the 
 
 
 # Reference
-http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
-https://en.wikipedia.org/wiki/Nested_set_model
+* http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
+* https://en.wikipedia.org/wiki/Nested_set_model
