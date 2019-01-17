@@ -4,7 +4,7 @@ Store branches can have any number of other store branches (children).
 
 # Choosing the data structure
 
-On first glane, a tree data structure can be implemented relaltively easily with table structure like this:
+On first glance, a tree data structure can be implemented relaltively easily with table structure like this:
 
 | id | name    | parent_id |
 |----|---------|-----------|
